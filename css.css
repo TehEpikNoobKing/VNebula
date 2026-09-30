@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.site-page {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #0d0118, #342244);
+    color: #fff;
+    text-shadow: 0px 0px 5px #ffffffd2;
+    font-family: "Ubuntu";
+}
+
+.page-content {
+    position: relative;
+    z-index: 1;
+
+    width: 970px;
+    padding: 24px;
+    margin: 24px auto;
+    background-color: #00000030;
+}
+
+.header-logo {
+  width: 70%;
+  margin: 0 15% 24px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.sky {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.circle {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.blink_1 {
+  animation-name: blink10;
+}
+
+.blink_2 {
+  animation-name: blink20;
+}
+
+.blink_3 {
+  animation-name: blink30;
+}
+
+.blink_4 {
+  animation-name: blink40;
+}
+
+.blink_5 {
+  animation-name: blink50;
+}
+
+@keyframes blink10 {
+  0%, 100% {
+    background-color: #fff;
+  }
+  20% {
+    background-color: #222;
+  }
+}
+
+@keyframes blink20 {
+  0%, 100% {
+    background-color: #222;
+  }
+  40% {
+    background-color: #fff;
+  }
+}
+
+@keyframes blink50 {
+  0%, 100% {
+    background-color: #fff;
+  }
+  50% {
+    background-color: #222;
+  }
+}
+
+@keyframes blink30 {
+  0%, 100% {
+    background-color: #fff;
+  }
+  60% {
+    background-color: #222;
+  }
+}
+
+@keyframes blink40 {
+  0%, 100% {
+    background-color: #222;
+  }
+  80% {
+    background-color: #fff;
+  }
+}
+
