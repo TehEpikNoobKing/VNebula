@@ -1,0 +1,27 @@
+{
+  "name": "Nebula",
+  "author": "cloud.bounded",
+  "description": "An extension for Vortex that makes the website your own!",
+  "version": "3",
+  "manifest_version": 3,
+  "icons": {
+    "32": "icons/icon32.png",
+    "64": "icons/icon64.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+      "*://*.playvortex.io/*"
+  ],
+  "content_scripts": [
+    {
+        "js": ["js/elements.js", "js/options.js", "js/page.js"],
+        "matches": [
+          "https://playvortex.io/*"
+        ],
+        "css": ["css/default.css"]
+    }
+  ]
+}
