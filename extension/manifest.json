@@ -1,27 +1,22 @@
 {
-  "name": "Nebula",
+  "name": "VortexKitty",
   "author": "cloud.bounded",
-  "description": "An extension for Vortex that makes the website your own!",
+  "description": "An extension for Vortex that enhances your experience with QoL features, themes, and more!",
   "version": "3",
   "manifest_version": 3,
   "icons": {
+    "16": "icons/icon16.png",
     "32": "icons/icon32.png",
-    "64": "icons/icon64.png",
+    "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
   "permissions": [
     "storage"
-  ],
+    ],
   "host_permissions": [
-      "*://*.playvortex.io/*"
-  ],
-  "content_scripts": [
-    {
-        "js": ["js/elements.js", "js/options.js", "js/page.js"],
-        "matches": [
-          "https://playvortex.io/*"
-        ],
-        "css": ["css/default.css"]
+    "*://*.playvortex.io/*"
+    ],
+  "action": {
+     "default_popup": "src/popup/index.html"
     }
-  ]
 }
