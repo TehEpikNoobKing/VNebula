@@ -12,11 +12,21 @@
   },
   "permissions": [
     "storage"
-    ],
+  ],
   "host_permissions": [
     "*://*.playvortex.io/*"
-    ],
+  ],
   "action": {
      "default_popup": "src/popup/index.html"
+  },
+
+  "content_scripts": [
+    {
+        "js": ["src/storage.js"],
+        "matches": [
+          "https://playvortex.io/*"
+        ],
+        "css": ["src/style.css"]
     }
+  ]
 }
